@@ -4,17 +4,16 @@
   "sideEffects": [
     "**/*.css"
   ],
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": "./dist",
-    "./styles.css": "./dist/index.css"
-  },
+  "main": "./src/index.tsx",
+  "types": "./src/index.tsx",
   "license": "MIT",
-  "scripts": {
-    "build": "tsup",
-    "lint": "eslint src/",
-    "dev": "tsup --watch",
-    "check-types": "tsc --noEmit"
+  "dependencies": {
+    "@radix-ui/react-slider": "^1.1.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.294.0",
+    "tailwind-merge": "^2.1.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "peerDependencies": {
     "react": "^18.2.0"
@@ -22,7 +21,7 @@
   "devDependencies": {
     "@types/react": "^18.2.5",
     "autoprefixer": "^10.4.13",
-    "eslint-config-custom": "*",
+    "eslint-config-octi": "*",
     "postcss": "^8.4.20",
     "react": "^18.2.0",
     "tailwind-config": "*",

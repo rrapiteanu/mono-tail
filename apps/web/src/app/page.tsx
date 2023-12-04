@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card } from "ui";
+import { Salut, Skeleton, Slider } from "ui";
 
 function Gradient({
   conic,
@@ -104,7 +104,7 @@ export default function Page(): JSX.Element {
             className="top-[-500px] opacity-[0.15] w-[1000px] h-[1000px]"
             conic
           />
-          <div className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6">
+          <div className="z-50 flex flex-col items-center justify-center gap-5 px-6 lg:gap-6">
             <svg
               className="w-[160px] md:w-[200px] fill-white"
               viewBox="0 0 506 50"
@@ -126,13 +126,13 @@ export default function Page(): JSX.Element {
         </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        {LINKS.map(({ title, href, description }) => (
-          <Card href={href} key={title} title={title}>
-            {description}
-          </Card>
-        ))}
-      </div>
+      <Salut />
+
+      <Skeleton className="w-[100px] h-[20px] rounded-full" />
+      <Slider defaultValue={[33]} max={100} step={1} />
+
+      <p className="text-rose-800">salut</p>
+      <p className="text-orange-800">aa</p>
     </main>
   );
 }

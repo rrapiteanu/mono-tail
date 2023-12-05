@@ -5,7 +5,8 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "clean": "turbo clean",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "ui:add": "turbo run ui:add --filter=ui --"
   },
   "devDependencies": {
     "eslint": "^8.48.0",

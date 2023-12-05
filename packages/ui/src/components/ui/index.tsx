@@ -4,3 +4,6 @@ export * from "./tooltip";
 export * from "./label";
 export * from "./slider";
 export * from "./skeleton";
+export * from "./input";
+export * from "./label";
+export * from "./icons";
